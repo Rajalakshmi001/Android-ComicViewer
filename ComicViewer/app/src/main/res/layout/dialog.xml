@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dip"
+    android:layout_marginStart="8dip"
+    android:orientation="vertical">
+
+    <com.android.internal.widget.DialogTitle
+        android:id="@+id/alertTitle"
+        style="@android:style/TextAppearance.Holo.DialogWindowTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_marginLeft="16dip"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:singleLine="true" />
+
+    <View
+        android:id="@+id/titleDivider"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="@android:color/holo_blue_light"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/contentPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/message"
+            android:textColor="@android:color/background_dark"
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dip"
+            android:paddingBottom="8dip"
+            android:paddingEnd="16dip"
+            android:paddingStart="16dip"
+            android:paddingTop="8dip"
+            android:textIsSelectable="true" />
+    </LinearLayout>
+
+
+</LinearLayout>
